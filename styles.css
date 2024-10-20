@@ -1,0 +1,1273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    /*font-size: 62.5%;*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(217, 217, 217);
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: rgb(250, 202, 214);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .navbar a {
+    font-size: 1.25rem;
+    padding: 0 1.5rem;
+    color: #000;
+    white-space: nowrap;
+
+}
+
+header .navbar a:hover {
+    color: rgb(73, 103, 66);
+}
+
+header .navbar img {
+    max-width: 25.75rem;
+    width: 100%;
+    height: auto;
+    max-height: 3.438rem;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-logo-container {
+    display: none;
+}
+
+.hamburger {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1100;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.75rem;
+    width: 2rem;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.home {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background-color:  rgb(250, 202, 214);
+    background-size: 56.25rem;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h1 {
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-size: 7.5rem;
+    color: rgb(73, 103, 66);
+    text-align: center;
+
+}
+
+.home .content h3 {
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(58, 46, 57);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/* About Us */
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 7.688rem;
+    padding-bottom: 15rem;
+
+}
+
+.img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    /*max-width: 32.188rem;*/
+    width: 100%;
+    max-width: 100%;
+    /*max-height: 46.375rem;*/
+    height: auto;
+    padding: 0.625rem;
+    border-radius: 3.438rem;
+}
+
+.content {
+    flex: 1;
+    max-width: 100%;
+    /*max-width: 29.625rem;*/
+    max-height: 42.125rem;
+    padding: 0 1.5rem;
+}
+
+.content h2 {
+    font-size: 6rem;
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    color: rgb(73, 103, 66);
+    padding: 0.1rem;
+}
+
+.content p {
+    font-size: 1.813rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(58, 46, 57);
+    padding: 0.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 29.625rem;
+    height: auto;
+    text-align: justify;
+}
+/* End of About Us*/
+
+/* Book of the Month */
+.book {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 81rem;
+    height: auto;
+    background-color: rgb(73, 103, 66);
+    border-radius: 3.125rem;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.book-img-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    min-width: 18.75rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.book-img-container img {
+    width: 100%;
+    max-width: 26.188rem;
+    height: auto;
+    padding: 0.625rem;
+    border-radius: 3.438rem;
+}
+
+.book-content {
+    flex: 1;
+    max-width: 29.625rem;
+    padding-right: 1rem;
+}
+
+.book-content h2{
+    font-size: 5rem;
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    color: rgb(250, 202, 214);
+    padding: 0.1rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.bold {
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.book-content h2 br {
+    content: "";
+    margin: 0.5rem 0;
+}
+
+.book-content p {
+    font-size: 1.625rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(254, 245, 247);
+    padding: 0.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 29.625rem;
+    height: auto;
+    text-align: justify;
+}
+
+.book-content .link {
+    text-align: center;
+}
+
+.book-content .link a {
+    color: rgb(254, 245, 247);
+}
+
+.book-content .link a:hover{
+    color: rgb(250, 202, 214);
+    text-decoration: underline;
+}
+
+/* End of Book of the Month */
+
+/* Menu */
+
+.menu-container {
+    text-align: center;
+    background-color: rgb(250, 202, 214);;
+    border-radius: 3.125rem;
+    padding: 4rem 2rem;
+    margin-top: 5rem;
+}
+
+.menu-container h3{
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: rgb(73, 103, 66);
+    margin-bottom: 5rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: rgb(73, 103, 66);
+    padding: 1rem;
+    border-radius: 2rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    text-align: center;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu-description {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(58, 46, 57);
+    margin-top: 1rem; 
+    font-size: 1.5rem; 
+    text-align: center; 
+}
+
+.menu-item img {
+    /*max-width: 15.625rem;*/
+    max-width: 100%;
+    border-radius: 1rem;
+    height: auto;
+}
+
+/*.menu-item p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(58, 46, 57);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}*/
+
+.link-menu {
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.link-menu a {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(73, 103, 66);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.link-menu a:hover {
+    text-decoration: underline;
+}
+
+/* End of Menu */
+
+/* Newsletter */
+
+.newsletter {
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background-color: rgb(217, 217, 217);
+}
+
+.newsletter-container h2 {
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-size: 4.688rem;
+    color: rgb(73, 103, 66);
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-container p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(58, 46, 57);
+}
+
+.newsletter-container .form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.newsletter-container input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    width: 40%;
+    max-width: 47.813rem;
+    background-color: rgb(201, 201, 201);
+}
+
+.newsletter-container button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgb(73, 103, 66);
+    color: rgb(250, 202, 214);
+    border: none;
+    cursor: pointer;
+}
+
+/* End of Newsletter */
+
+/* Footer */
+
+.footer {
+    background-color: rgb(73, 103, 66);
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(254, 245, 247);
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container div {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    max-width: 10rem;
+}
+
+.footer .logo img {
+    max-width: 15rem;
+    margin-bottom: 0rem;
+}
+
+.footer h4 {
+    font-family: 'Open Sans', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(250, 202, 214);
+    margin-bottom: 0.5rem;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.logo img {
+    max-width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.social-media img {
+    width: 2.5rem;
+    margin: 0 0.3rem;
+}
+
+/* End of Footer */
+
+/* ======================================== BOOK HTML ======================================== */
+.intro {
+    padding-top: 7.688rem;
+}
+
+.intro-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90rem;
+    height: auto;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.intro-content {
+    flex: 0 0 60%;
+    /*width: 40.188rem;
+    max-width: 29.625rem;*/
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.intro-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0.625rem;
+    border-radius: 2rem;
+}
+
+.intro-content h3 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    color: rgb(58, 46, 57);
+    padding: 1rem;
+}
+
+.intro-content h2 {
+    font-size: 5rem;
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    color: rgb(73, 103, 66);
+    padding: 1rem;
+}
+
+.intro-content p {
+    text-align: justify;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(58, 46, 57);
+    padding: 1rem;
+}
+
+.intro-content p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.intro-image figcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(58, 46, 57);
+    padding: 1rem;
+}
+
+/* Body of Article */
+
+.main-body-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90rem;
+    padding: 0rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote h3 {
+    text-align: center; /* Center the quotes */
+    margin: 2rem 0;
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 450;
+    color: rgb(73, 103, 66)
+}
+
+.quote .quote-from {
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(58, 46, 57);
+}
+
+.paragraph {
+    text-align: justify; /* Justify paragraphs */
+    font-size: 1.25rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(58, 46, 57);
+    padding: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.paragraph p {
+    text-align: justify; 
+    text-indent: 2em;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    color: rgb(58, 46, 57);
+    padding: 1rem;
+    max-width: 80rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ======================================== MENU HTML ======================================== */
+
+
+.menu-content {
+    padding-bottom: 3rem;
+}
+
+.menu-content h3 {
+    font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: rgb(73, 103, 66);
+}
+
+.menu-content p {
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    color: rgb(58, 46, 57);
+}
+.menu-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    /*min-width: 84.5rem;*/
+    height: auto;
+}
+
+.menu-page-container {
+    background-color: rgb(250, 202, 214);
+    width: 90%;
+    max-width: 90rem;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.menu-items-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    align-items: start;
+}
+
+.menu-item-menu-page {
+    background-color: rgb(73, 103, 66);
+    padding: 1rem;
+    border-radius: 2rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 20rem;
+}
+
+.menu-items-page img {
+    width: 15.625rem;
+    height: auto;
+    border-radius: 1rem;
+    max-height: 15rem;
+}
+
+.menu-description {
+    margin-top: 1rem;
+    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+    font-size: 1.375rem;
+    color: rgb(217, 217, 217);
+}
+
+.table-menu {
+    display: none;
+}
+
+/* MENU TABLE */
+.table-menu {
+    width: 100%;
+    max-width: 55rem; 
+    border-collapse: collapse; 
+    margin: 1rem auto; 
+}
+
+.table-item {
+    padding: 0.75rem; 
+    text-align: center; 
+    font-size: 1rem; 
+}
+
+.tbody-menu tr:nth-child(odd) {
+    background-color: rgb(201, 201, 201);
+}
+
+.tbody-menu tr:nth-child(even) {
+    background-color: rgb(217, 217, 217); 
+}
+
+.table-menu-div {
+    overflow-x: auto;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+/* tablet */
+@media (max-width:1024px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    .about {
+        padding: 2rem;
+    }
+
+    /* About Us */
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .img-container img {
+        max-width: 32.188rem;;
+        /*max-height: 20.813rem;*/
+        height: auto;
+        padding: 0.625rem;
+        border-radius: 3.125rem;
+    }
+
+    .content {
+        text-align: center;
+        padding: 0 1.5rem;
+        max-width: 52.875rem;
+    }
+
+    .content h2 {
+        font-size: 6rem;
+        font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+        color: rgb(73, 103, 66);
+        margin-bottom: 1rem;
+    }
+    
+    .content p {
+        font-size: 1.813rem;
+        font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+        color: rgb(58, 46, 57);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        max-width: 52.875rem;
+        height: auto;
+        text-align: justify;
+    }
+    /* End of About Us */
+
+    /* Book of the Month */
+    .book {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .book-content {
+        text-align: center;
+        padding: 0 1.5rem;
+        max-width: 52.875rem;
+    }
+
+    .book-content h2 {
+        font-size: 4.375rem;
+    }
+
+    .book-content p {
+        font-size: 1.625rem;
+    }
+
+    .book-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .book-img-container img {
+        max-width: 23rem;
+        height: auto;
+        padding: 0.625rem;
+        border-radius: 3.125rem;
+    }
+
+    /* End of Book of the Month */
+    /* Menu */
+    /* End of Menu */
+
+    /* ======================================== BOOK HTML ======================================== */
+
+    .intro-all {
+        max-width: 100%;  
+        padding: 1.5rem;  
+    }
+
+    .intro-content {
+        flex: 0 0 60%; 
+        padding-right: 1rem;
+    }
+
+    .intro-image {
+        flex: 0 0 40%;
+        padding-right: 1rem;
+    }
+
+    .intro-image img {
+        max-width: 90%; 
+    }
+
+    .intro-content h3 {
+        font-size: 2.5rem; 
+    }
+
+    .intro-content h2 {
+        font-size: 4rem;
+    }
+
+    .intro-content p {
+        font-size: 1.125rem;
+    }
+
+    /* ======================================== MENU HTML ======================================== */
+
+    .menu-page-container {
+        display: none;
+    }
+
+    .table-menu {
+        display: table;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 480px){
+    .mobile-logo-container {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .mobile-logo-container img {
+        max-width: 15rem;
+        width: 100%;
+        height: auto;
+        max-height: 15rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    .hamburger .bar {
+        width: 100%;
+        height: 0.2rem;
+        background-color: #333;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    /* Mobile Navigation Menu */
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        background-color: rgb(250, 202, 214);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-nav ul li {
+        margin: 1rem 0;
+    }
+
+    .mobile-nav ul li a {
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .mobile-nav.open {
+        display: flex;
+    }
+
+    /* Mobile Nav End */
+
+    .home {
+        padding-top: 5rem;
+    }
+
+    .home .content {
+        margin-top: 0;
+    }
+
+    .home .content h1 {
+        font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+        font-size: 3.125rem;
+        color: rgb(73, 103, 66);
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    .home .content h3 {
+        font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: rgb(58, 46, 57);
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+    
+    /* About Us Section */
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .img-container img {
+        max-width: 20rem;
+        /*max-height: 20.813rem;*/
+        height: auto;
+        padding: 0.625rem;
+        border-radius: 3.125rem;
+    }
+
+    .content {
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+        font-family: 'Playfair Display', Verdana, Tahoma, sans-serif;
+        color: rgb(73, 103, 66);
+        margin-bottom: 1rem;
+    }
+    
+    .content p {
+        font-size: 1.125rem;
+        font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+        color: rgb(58, 46, 57);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    /* End of About Us*/
+
+    /* Book of the Month */
+
+    .book {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .book-content h3 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .book-content p {
+        padding-top: 2rem;
+        font-size: 1.125rem;
+    }
+
+    /* End of Book of the Month */
+
+    /* Menu */
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .menu-container h3 {
+        font-size: 1.75rem;
+        padding-top: 3rem;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .menu-item {
+        width: 50%; 
+        margin-bottom: 1rem; 
+    }
+
+    .menu-item img {
+        max-width: 9.617rem;
+        height: auto; 
+    }
+    
+    .menu-description {
+        font-size: 0.938rem;
+    }
+
+    .link-menu {
+        margin-bottom: 3rem;
+        padding-top: 4rem;
+    }
+
+    .link-menu a {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(73, 103, 66);
+        font-size: 1.5rem; /* Adjust font size for mobile */
+        text-decoration: none;
+    }
+
+    .link-menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* End of Menu */
+
+    /* Newsletter */
+
+    .newsletter-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter-container p {
+        font-size: 1.25rem;
+    }
+
+    .newsletter-container input[type="email"] {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .newsletter-container button {
+        font-size: 1.2rem;
+    }
+
+    .newsletter-container .form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .newsletter-container input[type="email"],
+    .newsletter-container button {
+        width: 100%;
+    }
+    /* End of Newsletter */
+
+    /* Footer */
+     .footer-container {
+        flex-direction: column; 
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .store-hours, .contact {
+        margin-bottom: 1rem;
+    }
+    
+    .logo-social {
+        margin-bottom: 1rem;
+        order: -1; /* Move logo and social media to the top */
+    }
+    
+    .logo-social img {
+        margin-bottom: 1rem;
+    }
+
+    .logo-social .logo img {
+        max-width: 10rem;
+    }
+    
+    .footer h4 {
+        font-size: 1.2rem;
+    }
+    
+    .social-media img {
+        width: 1.5rem;
+    }
+
+    .footer-container div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    /* End of Footer */
+
+    /* ======================================== BOOK HTML ======================================== */
+
+    .intro {
+        padding-top: 18rem;
+    }
+
+    .intro-all {
+        flex-direction: column-reverse;  
+        align-items: center;
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+
+    .intro-content, .intro-image {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0;   
+    }
+
+    .intro-image {
+        display: flex;
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .intro-image img {
+        width: 100%; 
+        max-width: 100%;  
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .intro-content h3 {
+        font-size: 2rem;  
+    }
+
+    .intro-content h2 {
+        font-size: 3rem;  
+    }
+
+    .intro-content p {
+        font-size: 1rem;  
+        text-align: justify;  
+    }
+
+    .intro-content .author {
+        text-align: center;  
+    }
+
+    .intro-image figcaption {
+        font-size: 0.875rem; 
+    }
+
+    /* ======================================== MENU HTML ======================================== */
+
+    .menu-page {
+        padding-top: 25rem;
+    }
+
+    .menu-page-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .menu-items-page {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .menu-item-menu-page {
+        width: 30rem;
+        height: 30rem; 
+    }
+
+    .menu-item-menu-page img {
+        width: 80%;
+        margin-bottom: 1rem; 
+    }
+
+    .menu-item-menu-page p{
+        font-size: 3rem;
+    }
+
+    .table-menu {
+        display: none;
+    }
+
+} 
+
+/* Print */
+@media print {
+    .header .navbar, .mobile-nav {
+        display: none;
+    }
+
+    h3, h2, h4 {
+        page-break-after: avoid;
+    }
+
+    .img-container {
+        width: 50%;
+        max-width: 50%;
+        height: auto;
+        padding: 0.625rem;
+        border-radius: 1rem;
+    }
+
+    .content h2 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+    .book-content .link {
+        display: none;
+    }
+
+    .book-img-container {
+        width: 50%;
+        max-width: 50%;
+        height: auto;
+        padding: 0.625rem;
+        border-radius: 1rem;
+    }
+
+    .book-content h2 {
+        font-size: 3rem;
+        color: rgb(73, 103, 66);
+    }
+
+    .book-content p {
+        font-size: 1.5rem;
+        color: rgb(58, 46, 57);
+    }
+
+    .menu-container .link-menu {
+        display: none;
+    }
+
+    p {
+        margin: 0 0 10px; /* Add spacing between paragraphs */
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Bookclub Cafe</title>
+	    <meta charset = "utf-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+	    <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class = "header">
+        <nav class = "navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html"><img src = "images/LOGO_GREEN_VER 1.0.png"></a>
+            <a href="book.html">Books</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+        <!-- Mobile Logo -->
+         <div class="mobile-logo-container">
+            <img src="images/LOGO_ROUND_GREEN.png" alt="round logo">
+         </div>
+
+        <!-- Hamburger Icon (Mobile)-->
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- End of Navigation -->
+
+    <!-- Book of the Month Header -->
+    <section class="intro">
+        <div class="intro-all">
+            <div class="intro-content">
+                <h3>Book of the Month</h3>
+                <h2>The Picture of Dorian Gray</h2>
+                <p class="author">by: Oscar Wilde</p>
+                <p>Oscar Wilde's The Portrait of Dorian Gray tells the haunting story of a young man who, enchanted by his own beauty, 
+                makes a dark pact to stay forever youthful. As his portrait ages and bears the marks of his corrupted soul, Dorian 
+                descends into a world of moral decay, where the lines between appearance and reality blur.</p>
+            </div>
+            <div class="intro-image">
+                <figure>
+                    <img src="images/DORIAN.jpg" alt="DORIAN" />
+                    <figcaption class="figcaption"> The Portrait of Dorian Gray </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="main-body">
+        <div class="main-body-all">
+            <div class="quote">
+                <h3>"A mesmerizing tale of beauty, corruption, and the haunting consequences of living without a moral compass." </h3>
+                <h3 class="quote-from">-The Portrait of Dorian Gray</h3>
+            </div>
+            <div class="paragraph">
+                <p>The Portrait of Dorian Gray is a brilliant exploration of vanity, morality, and the consequences of living without conscience. Wilde’s witty, elegant prose draws readers into the glamorous but dark world of Victorian society, where beauty is worshipped and decadence reigns. The novel’s sharp critiques of societal hypocrisy, combined with its eerie, gothic undertones, make it a timeless read. Dorian Gray’s tragic downfall serves as a cautionary tale, reminding us of the dangers of unchecked desires and the pursuit of eternal youth at the expense of the soul. A must-read for anyone interested in psychological drama and moral philosophy.</p>
+
+                <p>Join us this month at The Bookclub Cafe as we dive into the captivating world of The Portrait of Dorian Gray. Whether you’re reading it for the first time or revisiting its haunting themes, this is a novel that sparks deep discussion and introspection. Grab a cup of your favorite coffee, immerse yourself in the pages, and join our community of readers to share your thoughts, insights, and interpretations. Let’s explore the complexities of beauty, morality, and human nature together!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="store-hours">
+                <h4>Store Hours</h4>
+                <p>Mon - Wednesday: </p>
+                <p>10:00 am - 7:00 pm</p>
+                <br>
+                <p>Thurs - Saturday</p>
+                <p>9:00 am - 8:00 pm</p>
+            </div>
+            <div class="logo-social">
+                <div class="logo">
+                    <img src = "images/LOGO_ROUND_PINK.png" alt="footer logo">
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/"><img src="images/SM INSTA.png" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/en/"><img src="images/SM TIKTOK.png" alt="tiktok"></a>
+                    <a href="https://x.com/?lang=en"><img src="images/SM X.png" alt="x"></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p>0917-154-8339</p>
+                <p>348-400-BOOK</p>
+                <br>
+                <p>46 Mellow Road</p>
+                <p>Cloud District, Whiterun</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>The Bookclub Cafe</title>
+	    <meta charset = "utf-8"/>
+	    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+	    <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <header class = "header">
+            <nav class = "navbar">
+                <a href="index.html">Home</a>
+                <a href="index.html">About Us</a>
+                <a href="index.html"><img src = "images/LOGO_GREEN_VER 1.0.png"></a>
+                <a href="book.html">Books</a>
+                <a href="menu.html">Menu</a>
+            </nav>
+            <!-- Mobile Logo -->
+             <div class="mobile-logo-container">
+                <img src="images/LOGO_ROUND_GREEN.png" alt="round logo">
+             </div>
+
+            <!-- Hamburger Icon (Mobile)-->
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- Menu -->
+        <section class="menu-page">
+            <div class="menu-page-container">
+                <div class="menu-content">
+                    <h3>The Bookclub Menu</h3>
+                    <p>Where every cup tells a story - sip, relax. and enoy our carefuly crafted brews.</p>
+                </div>
+                <div class="menu-items-page">
+                    <!-- Row 1-->
+                    <div class="menu-item-menu-page"> 
+                        <img src="images/menu 1 - turkish coffee.png" alt="turkish coffee">
+                        <p class="menu-description">Turkish Coffee</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 2 - latte.png" alt="latte">
+                        <p class="menu-description">Latte</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 3 - cappuccino.png" alt="cappuccino">
+                        <p class="menu-description">Cappuccino</p>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 4 - classic espresso.png" alt="classic espresso">
+                        <p class="menu-description">Classic Espresso</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 5 - mocha latte.png" alt="mocha latte">
+                        <p class="menu-description">Mocha Latte</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 6 - iced cappuccino.png" alt="iced cappuccino">
+                        <p class="menu-description">Iced Cappuccino</p>
+                    </div>
+                    <!-- Row 3-->
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 7 - chai latte.png" alt="chai latte">
+                        <p class="menu-description">Chai Latte</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 8 - hot choco.png" alt="hot choco">
+                        <p class="menu-description">Hot Choco</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 9 - earl grey tea.png" alt="earl grey">
+                        <p class="menu-description">Earl Grey Tea</p>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 10 - croissant.png" alt="croissant">
+                        <p class="menu-description">croissant</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 11 - sesame bagel.png" alt="sesame">
+                        <p class="menu-description">Sesame bagel</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 12 - chocolate muffin.png" alt="muffin">
+                        <p class="menu-description">Chocolate Muffin</p>
+                    </div>
+                    <!-- Row 5 -->
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 13 - raspberry tart cake.png" alt="raspberry">
+                        <p class="menu-description">Raspberry Tart Cake</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 14 - choco mousse.png" alt="mousse">
+                        <p class="menu-description">Choco Mousse</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 15 - strawberry cheescake.png" alt="cheescake">
+                        <p class="menu-description">Strawberry Cheesecake</p>
+                    </div>
+                    <!-- Row 6 -->
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 16 - bolognese pasta.png" alt="bolognese">
+                        <p class="menu-description">Bolognese Pasta</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 17 - penne caesar salad pasta.png" alt="penne caesar">
+                        <p class="menu-description">Penne Caesar Salad</p>
+                    </div>
+                    <div class="menu-item-menu-page">
+                        <img src="images/menu 18 - lasagna.png" alt="lasagna">
+                        <p class="menu-description">Lasagna</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Table for Tablet View -->
+         <section class="table-menu">
+            <div class="table-menu-div">
+                <table class="table-menu">
+                    <tbody class="tbody-menu">
+                        <tr class="table-row">
+                            <td class="table-item">Turkish Coffee</td>
+                            <td class="table-item">Latte</td>
+                            <td class="table-item">Cappuccino</td>
+                        </tr>
+                        <tr>
+                            <td class="table-item">Chai Latte</td>
+                            <td class="table-item">Hot Choco</td>
+                            <td class="table-item">Earl Grey Tea</td>
+                        </tr>
+                        <tr>
+                            <td class="table-item">Croissant</td>
+                            <td class="table-item">Sesame Bagel</td>
+                            <td class="table-item">Chocolate Muffin</td>
+                        </tr>
+                        <tr>
+                            <td class="table-item">Raspberry Tart Cake</td>
+                            <td class="table-item">Choco Mousse</td>
+                            <td class="table-item">Strawberry Cheesecake</td>
+                        </tr>
+                        <tr>
+                            <td class="table-item">Bolognese Pasta</td>
+                            <td class="table-item">Penne Caesar Pasta</td>
+                            <td class="table-item">Lasagna</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </section>
+
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="store-hours">
+                <h4>Store Hours</h4>
+                <p>Mon - Wednesday: </p>
+                <p>10:00 am - 7:00 pm</p>
+                <br>
+                <p>Thurs - Saturday</p>
+                <p>9:00 am - 8:00 pm</p>
+            </div>
+            <div class="logo-social">
+                <div class="logo">
+                    <img src = "images/LOGO_ROUND_PINK.png" alt="footer logo">
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/"><img src="images/SM INSTA.png" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/en/"><img src="images/SM TIKTOK.png" alt="tiktok"></a>
+                    <a href="https://x.com/?lang=en"><img src="images/SM X.png" alt="x"></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p>0917-154-8339</p>
+                <p>348-400-BOOK</p>
+                <br>
+                <p>46 Mellow Road</p>
+                <p>Cloud District, Whiterun</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.classList.toggle('open');
+        }
+    </script>
+    </body>
+</html>
